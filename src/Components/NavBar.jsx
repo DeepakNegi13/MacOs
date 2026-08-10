@@ -1,4 +1,3 @@
-import React from "react";
 const NavBar = () => {
 	const formatter = new Intl.DateTimeFormat("en-IN", {
 		weekday: "short", // "Wed"

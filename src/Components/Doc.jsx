@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Github from "./Github.jsx";
 import Notes from "./Notes.jsx";
-import Terminal from "./windows/terminal.jsx";
 const Doc = () => {
 	const [onGit, setOnGit] = useState(false);
 	const githubClick = (e) => {
 		e.preventDefault();
 		setOnGit(!onGit);
-		console.log("git hub is clicked");
 	};
+
 	const [onNotes, setOnNotes] = useState(false);
 	let clickOnNotes = (e) => {
-		console.log("hello");
 		e.preventDefault();
 		setOnNotes(!onNotes);
 	};

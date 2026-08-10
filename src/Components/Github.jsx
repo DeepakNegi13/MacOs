@@ -1,5 +1,3 @@
-import React from "react";
-// import "./github.js"
 import githubData from "./github.js";
 import Terminal from "./windows/Terminal.jsx";
 

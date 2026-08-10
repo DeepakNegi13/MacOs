@@ -1,34 +1,36 @@
-import React, { useActionState, useState } from "react";
-import { Rnd } from "react-rnd";
+import { useEffect, useState } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Terminal from "./windows/Terminal";
 
 const Notes = () => {
-    // const [notesInput , setNotesInput] = useState('');
+	const [markdown, setMarkdown] = useState("");
+
+	useEffect(() => {
+		fetch("/note.txt")
+			.then((res) => res.text())
+			.then((text) => setMarkdown(text));
+	}, []);
 
 	return (
-		<Rnd
-			default={{
-				x: 500,
-				y: 200,
-				width: 320, // Sets the default width
-				height: 200, // Sets the default height
-			}}
-		>
-			<div className="notes">
-				<div className="top">
-					<div className="threeDot">
-						<div className="circle1"></div>
-						<div className="circle2"></div>
-						<div className="circle3"></div>
-					</div>
-					<div className="name">Deepak Negi</div>
-				</div>
-				<div className="main">
-                   
-                    {/* <input type="text" name="" id="" value={notesInput} onChange={}/>  console.log(e); */}
-                    
-                </div>
+		<Terminal>
+			<div className="notes-content">
+				<SyntaxHighlighter
+					language="typescript"
+					style={atomOneDark}
+					customStyle={{
+						background: "transparent",
+						padding: "8px 12px",
+						margin: 0,
+						fontSize: "13px",
+						lineHeight: "1.5",
+						overflowX: "hidden",
+					}}
+				>
+					{markdown}
+				</SyntaxHighlighter>
 			</div>
-		</Rnd>
+		</Terminal>
 	);
 };
 
