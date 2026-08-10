@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+}
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+main {
+	
+	overflow: -moz-hidden-unscrollable;
+	height: 100%;
+	width: 100%;
+	background-image: url(./mac-wallpaper.jpg);
+	background-size: cover;
+	background-position: center;
+	//Notes pop up Window
+	.notes{
+		position:absolute;
+		height: 100%;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		border: none;
+		background-color: rgba(0, 0, 0, 0.995);
+		
+
+		.top {
+			width: 100%;
+			height: 18px;
+			background-color: rgba(17, 17, 17, 0.829);
+			display: flex;
+			align-items: center;
+			padding: 0px 7px;
+			justify-content: center;
+			gap: 100px;
+			position: relative;
+
+			.threeDot {
+				left: 7px;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				padding: 0px 7px;
+				justify-content: space-evenly;
+				gap: 6px;
+				.circle1 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: red;
+				}
+				.circle2 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: rgba(230, 226, 10, 0.854);
+				}
+				.circle3 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: rgb(3, 192, 9);
+				}
+			}
+			.name {
+				color: white;
+				font-size: xx-small;
+			}
+
+		}
+		.main {
+			padding: 3px 6px;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(12, 12, 12, 0.829);
+			color: white;
+			font-size: 400;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-size: x-small;
+			overflow: scroll;
+			
+		}
+		.main::-webkit-scrollbar{
+			scroll-padding: 0px;
+			scale: unset;
+			scroll-snap-type:none;
+			scroll-behavior: smooth;
+		}
+	}
+
+
+	//terminal
+	.terminal {
+		
+		height: 100%;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		border: none;
+		
+
+		.top {
+			width: 100%;
+			height: 18px;
+			background-color: rgba(17, 17, 17, 0.829);
+			display: flex;
+			align-items: center;
+			padding: 0px 7px;
+			justify-content: center;
+			gap: 100px;
+			position: relative;
+
+			.threeDot {
+				left: 7px;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				padding: 0px 7px;
+				justify-content: space-evenly;
+				gap: 6px;
+				.circle1 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: red;
+				}
+				.circle2 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: rgba(230, 226, 10, 0.854);
+				}
+				.circle3 {
+					height: 10px;
+					width: 10px;
+					border-radius: 5px;
+					background-color: rgb(3, 192, 9);
+				}
+			}
+			.name {
+				color: white;
+				font-size: xx-small;
+			}
+
+		}
+		.main {
+			padding: 3px 6px;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(12, 12, 12, 0.829);
+			color: white;
+			font-size: 400;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-size: x-small;
+			overflow: scroll;
+			
+		}
+		.main::-webkit-scrollbar{
+			scroll-padding: 0px;
+			scale: unset;
+			scroll-snap-type:none;
+			scroll-behavior: smooth;
+		}
+	}
+
+	//nav bar section
+	header {
+		padding-right: 0.7rem;
+		padding-left: 0.7rem;
+		padding-block: 13px;
+		background-color: rgba(75, 74, 74, 0.416);
+		height: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		.dropDown {
+			display: none;
+		}
+		.threeDot {
+			display: none;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		.leftPortion {
+			display: flex;
+			gap: 0.75rem;
+		}
+		.rightPortion {
+			display: flex;
+			color: white;
+			gap: 0.75rem;
+		}
+	}
+
+	//Document section
+	footer {
+		background-color: rgba(97, 96, 96, 0.331);
+		// padding-block: 1vw;
+		padding-left: 1.1vw;
+		padding-right: 1.1vw;
+		border-radius: 10px;
+		height: auto;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin-bottom: 20px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: 0px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 0.8vw;
+		.icon {
+			padding: 3px;
+			height: fit-content;
+			width: fit-content;
+			background-color: black;
+			transition: all ease 0.4s;
+			border-radius: 3px;
+		}
+		img {
+			min-height: 18px;
+			height: 1.8vw;
+			max-height: 25px;
+			cursor: pointer;
+		}
+		.icon:hover {
+			scale: 1.4;
+			transform: translateY(-18%);
+		}
+		.icon:hover + .icon,
+		.icon:has(+ .icon:hover) {
+			scale: 1.2;
+			transition: all ease 0.4s;
+			transform: translateY(-6%);
+		}
+
+		.git {
+			background-color: black;
+			border-radius: 3px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	header {
+		padding-right: 0rem;
+		padding-left: 0rem;
+		.leftPortion {
+			a {
+				display: none;
+			}
+			img {
+				display: block;
+			}
+			.dropDown {
+				display: block;
+				width: 10px;
+				border: none;
+				background-color: transparent;
+				color: white;
+			}
+		}
+	}
+}
+@media (max-width: 200px) {
+	footer {
+		background-color: transparent;
+		display: none;
+		.icon {
+			display: none;
+		}
+		img {
+			display: none;
+		}
+	}
+}
