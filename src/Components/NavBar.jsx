@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Terminal from "./windows/Terminal";
 const NavBar = () => {
 	const formatter = new Intl.DateTimeFormat("en-IN", {
 		weekday: "short", // "Wed"
@@ -11,44 +13,56 @@ const NavBar = () => {
 
 	const shortDate = formatter.format(new Date());
 	// Output: "Wed, 5 Aug 2026, 9:30 pm"
-	return (
-		<header>
-			<div className="leftPortion">
-				<div>
-					<img src="/navbar-icons/apple.svg" alt="" />
-				</div>
 
-				<div className="dropDown">
-					{/* <label htmlFor="option">
-						<img className="threeDot" src="/threedot.svg" alt="" />
-					</label> */}
-					<select name="" id="option">
-						<option value="">
-							Deepak 
-						</option>
-						<option value="">
-							File
-						</option>
-						<option value="">
-							Window
-						</option>
-						<option value="">
-							Terminal
-						</option>
-					</select>
+	const [terminalOn, setTerminalOn] = useState(false);
+	const onTreminal = (e) => {
+		e.preventDefault();
+		setTerminalOn(!terminalOn);
+	};
+	return (
+		<>
+			{terminalOn && <Terminal />}
+			<header>
+				<div className="leftPortion">
+					<div>
+						<img src="/navbar-icons/apple.svg" alt="" />
+					</div>
+
+					<div className="dropDown">
+						<select name="" id="option">
+							<option value="">Deepak</option>
+							<option value="">File</option>
+							<option value="">Window</option>
+							<option
+								value=""
+								onClick={(e) => {
+									onTreminal(e);
+								}}
+							>
+								Terminal
+							</option>
+						</select>
+					</div>
+					<a href="">Deepak Negi</a>
+					<a href="">File</a>
+					<a href="">Window</a>
+					<a
+						href=""
+						onClick={(e) => {
+							onTreminal(e);
+						}}
+					>
+						Terminal
+					</a>
 				</div>
-				<a href="">Deepak Negi</a>
-				<a href="">File</a>
-				<a href="">Window</a>
-				<a href="">Terminal</a>
-			</div>
-			<div className="rightPortion">
-				<div>
-					<img src="/navbar-icons/wifi.svg" alt="" />
+				<div className="rightPortion">
+					<div>
+						<img src="/navbar-icons/wifi.svg" alt="" />
+					</div>
+					{shortDate}
 				</div>
-				{shortDate}
-			</div>
-		</header>
+			</header>
+		</>
 	);
 };
 

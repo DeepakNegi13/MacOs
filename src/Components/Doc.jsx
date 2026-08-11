@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Github from "./Github.jsx";
 import Notes from "./Notes.jsx";
+import Spotify from "./spotify.jsx";
+import Resume from "./Resume.jsx";
 const Doc = () => {
 	const [onGit, setOnGit] = useState(false);
 	const githubClick = (e) => {
@@ -13,10 +15,24 @@ const Doc = () => {
 		e.preventDefault();
 		setOnNotes(!onNotes);
 	};
+
+	const [onSpotify, setOnSpotify] = useState(false);
+	let clickOnSpotify = (e) => {
+		e.preventDefault();
+		setOnSpotify(!onSpotify);
+	};
+
+	const [onResume, setOnResume] = useState(false);
+	let clickOnResume = (e) => {
+		e.preventDefault();
+		setOnResume(!onResume);
+	}
 	return (
 		<>
 			{onGit && <Github />}
 			{onNotes && <Notes />}
+			{onSpotify && <Spotify />}
+			{onResume && <Resume />}
 			<footer>
 				<a
 					href="/"
@@ -49,10 +65,14 @@ const Doc = () => {
 					<img src="/doc-icons/note.svg" alt="" />
 				</div>
 
-				<div className="pdf icon">
+				<div className="pdf icon" onClick={(e) => {
+					clickOnResume(e);
+				}}>
 					<img src="/doc-icons/pdf.svg" alt="" />
 				</div>
-				<div className="spotify icon">
+				<div className="spotify icon" onClick={(e) => {
+					clickOnSpotify(e);
+				}}>
 					<img src="/doc-icons/spotify.svg" alt="" />
 				</div>
 			</footer>
