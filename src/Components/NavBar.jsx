@@ -37,8 +37,7 @@ const NavBar = () => {
 								value=""
 								onClick={(e) => {
 									onTreminal(e);
-								}}
-							>
+								}}>
 								Terminal
 							</option>
 						</select>
@@ -50,8 +49,7 @@ const NavBar = () => {
 						href=""
 						onClick={(e) => {
 							onTreminal(e);
-						}}
-					>
+						}}>
 						Terminal
 					</a>
 				</div>

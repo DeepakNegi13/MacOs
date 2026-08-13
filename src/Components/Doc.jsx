@@ -55,6 +55,7 @@ const Doc = () => {
 				<div className="calendar icon">
 					<img src="/doc-icons/calender.svg" alt="" />
 				</div>
+
 				<div className="cli icon">
 					<img src="/doc-icons/cli.svg" alt="" />
 				</div>

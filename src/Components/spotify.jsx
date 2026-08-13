@@ -15,8 +15,7 @@ const spotify = () => {
 							frameBorder="0"
 							allowfullscreen="true"
 							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-							loading="eager"
-						></iframe>
+							loading="eager"></iframe>
 					}
 				</div>
 			</Terminal>

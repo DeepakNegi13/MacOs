@@ -1,111 +1,116 @@
 const githubData = [
-  {
-    "id": 1,
-    "name": "orbit-ui",
-    "owner": "tech-nova",
-    "description": "A modern React component library.",
-    "language": "TypeScript",
-    "stars": 12450,
-    "is_private": false
-  },
-  {
-    "id": 2,
-    "name": "data-weaver",
-    "owner": "alex-dev",
-    "description": "Fast data pipeline orchestrator.",
-    "language": "Rust",
-    "stars": 3892,
-    "is_private": false
-  },
-  {
-    "id": 3,
-    "name": "nexus-cache",
-    "owner": "cloud-ops",
-    "description": "Internal distributed caching layer.",
-    "language": "Go",
-    "stars": 0,
-    "is_private": true
-  },
-  {
-    "id": 4,
-    "name": "py-scraper",
-    "owner": "sarah-codes",
-    "description": "A lightweight web scraper built with BeautifulSoup.",
-    "language": "Python",
-    "stars": 450,
-    "is_private": false
-  },
-  {
-    "id": 5,
-    "name": "algo-visualizer",
-    "owner": "edu-tools",
-    "description": "Interactive visualization tool for sorting and routing algorithms.",
-    "language": "JavaScript",
-    "stars": 1205,
-    "is_private": false
-  },
-  {
-    "id": 6,
-    "name": "e-commerce-ios",
-    "owner": "mobile-wizards",
-    "description": "Native iOS client for our flagship store.",
-    "language": "Swift",
-    "stars": 12,
-    "is_private": true
-  },
-  {
-    "id": 7,
-    "name": "ml-toolkit",
-    "owner": "data-science-labs",
-    "description": "A collection of utility functions for data preprocessing.",
-    "language": "Python",
-    "stars": 8900,
-    "is_private": false
-  },
-  {
-    "id": 8,
-    "name": "auth-service",
-    "owner": "cloud-ops",
-    "description": "Centralized authentication and authorization microservice.",
-    "language": "Java",
-    "stars": 4,
-    "is_private": true
-  },
-  {
-    "id": 9,
-    "name": "portfolio-template",
-    "owner": "design-by-emily",
-    "description": "Minimalist personal portfolio website template.",
-    "language": "HTML",
-    "stars": 340,
-    "is_private": false
-  },
-  {
-    "id": 10,
-    "name": "retro-engine",
-    "owner": "pixel-games",
-    "description": "2D game engine optimized for 8-bit style graphics.",
-    "language": "C++",
-    "stars": 2150,
-    "is_private": false
-  },
-  {
-    "id": 11,
-    "name": "devops-scripts",
-    "owner": "sysadmin-joe",
-    "description": "Handy bash scripts for server maintenance and deployment.",
-    "language": "Shell",
-    "stars": 88,
-    "is_private": false
-  },
-  {
-    "id": 12,
-    "name": "billing-api",
-    "owner": "fin-tech-startup",
-    "description": "API for handling Stripe integrations and recurring subscriptions.",
-    "language": "Ruby",
-    "stars": 0,
-    "is_private": true
-  }
-]
-export default  githubData;
+	{
+		id: 1,
+		name: "orbit-ui",
+		owner: "tech-nova",
+		description: "A modern React component library.",
+		language: "TypeScript",
+		stars: 12450,
+		is_private: false,
+	},
+	{
+		id: 2,
+		name: "data-weaver",
+		owner: "alex-dev",
+		description: "Fast data pipeline orchestrator.",
+		language: "Rust",
+		stars: 3892,
+		is_private: false,
+	},
+	{
+		id: 3,
+		name: "nexus-cache",
+		owner: "cloud-ops",
+		description: "Internal distributed caching layer.",
+		language: "Go",
+		stars: 0,
+		is_private: true,
+	},
+	{
+		id: 4,
+		name: "py-scraper",
+		owner: "sarah-codes",
+		description: "A lightweight web scraper built with BeautifulSoup.",
+		language: "Python",
+		stars: 450,
+		is_private: false,
+	},
+	{
+		id: 5,
+		name: "algo-visualizer",
+		owner: "edu-tools",
+		description:
+			"Interactive visualization tool for sorting and routing algorithms.",
+		language: "JavaScript",
+		stars: 1205,
+		is_private: false,
+	},
+	{
+		id: 6,
+		name: "e-commerce-ios",
+		owner: "mobile-wizards",
+		description: "Native iOS client for our flagship store.",
+		language: "Swift",
+		stars: 12,
+		is_private: true,
+	},
+	{
+		id: 7,
+		name: "ml-toolkit",
+		owner: "data-science-labs",
+		description:
+			"A collection of utility functions for data preprocessing.",
+		language: "Python",
+		stars: 8900,
+		is_private: false,
+	},
+	{
+		id: 8,
+		name: "auth-service",
+		owner: "cloud-ops",
+		description:
+			"Centralized authentication and authorization microservice.",
+		language: "Java",
+		stars: 4,
+		is_private: true,
+	},
+	{
+		id: 9,
+		name: "portfolio-template",
+		owner: "design-by-emily",
+		description: "Minimalist personal portfolio website template.",
+		language: "HTML",
+		stars: 340,
+		is_private: false,
+	},
+	{
+		id: 10,
+		name: "retro-engine",
+		owner: "pixel-games",
+		description: "2D game engine optimized for 8-bit style graphics.",
+		language: "C++",
+		stars: 2150,
+		is_private: false,
+	},
+	{
+		id: 11,
+		name: "devops-scripts",
+		owner: "sysadmin-joe",
+		description:
+			"Handy bash scripts for server maintenance and deployment.",
+		language: "Shell",
+		stars: 88,
+		is_private: false,
+	},
+	{
+		id: 12,
+		name: "billing-api",
+		owner: "fin-tech-startup",
+		description:
+			"API for handling Stripe integrations and recurring subscriptions.",
+		language: "Ruby",
+		stars: 0,
+		is_private: true,
+	},
+];
+export default githubData;

@@ -25,8 +25,7 @@ const Notes = () => {
 						fontSize: "13px",
 						lineHeight: "1.5",
 						overflowX: "hidden",
-					}}
-				>
+					}}>
 					{markdown}
 				</SyntaxHighlighter>
 			</div>
